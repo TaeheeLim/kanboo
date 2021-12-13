@@ -34,6 +34,8 @@ public class KanbanItem {
     private LocalDateTime kbDate;
     private String kbBadge;
     private String kbColor;
+    private LocalDateTime kbStartDate;
+    private LocalDateTime kbEndDate;
 
     public KanbanItemDTO entityToDto() {
         return KanbanItemDTO.builder()

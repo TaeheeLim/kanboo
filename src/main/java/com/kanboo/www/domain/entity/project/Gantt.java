@@ -1,4 +1,5 @@
 package com.kanboo.www.domain.entity.project;
+import com.kanboo.www.domain.entity.member.Member;
 import com.kanboo.www.dto.project.GanttDTO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -22,6 +23,10 @@ public class Gantt {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "prjct_idx")
     private Project project;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "mem_idx")
+    private Member member;
 
     private String gtState;
     private String gtPriority;

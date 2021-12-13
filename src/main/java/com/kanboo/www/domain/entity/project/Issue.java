@@ -32,6 +32,7 @@ public class Issue {
     private String issueCn;
     private LocalDateTime issueDate;
     private String issueState;
+    private String issueGitFile;
 
     public IssueDTO entityToDto() {
         return IssueDTO.builder()
