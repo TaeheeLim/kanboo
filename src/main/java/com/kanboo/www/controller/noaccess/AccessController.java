@@ -27,6 +27,7 @@ public class AccessController {
         if (loginHandler) {
             jwt_token = jwtSecurityService.createToken(memberDTO.getMemId(), 60L);
         }
+
         return jwt_token;
     }
 

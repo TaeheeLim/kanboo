@@ -9,7 +9,7 @@ spring:
     #password: 1234
     url: jdbc:h2:tcp://localhost/~/test
     username: sa
-    password: 1234
+    password:
   jpa:
     hibernate:
 #      ddl-auto: create

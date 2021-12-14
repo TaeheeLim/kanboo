@@ -10,4 +10,5 @@ public class KanbooApplication {
         SpringApplication.run(KanbooApplication.class, args);
     }
 
+
 }
